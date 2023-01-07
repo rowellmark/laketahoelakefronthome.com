@@ -19,15 +19,38 @@
     <?php do_action('aios_neighborhoods_header'); ?>
 
 
-	<header class="header">
-		<div class="container">
+	<header class="header fixed w-100">
+		<div class="header-container expanded-container flex justify-between w-100 items-center">
 			<div class="logo">
-				<a href="<?php echo esc_url( home_url() ) ?>" class="site-name"><?php bloginfo('name'); ?></a>
-			</div>
+				<a href="<?= do_shortcode('[blogurl]')?>" class="site-name relative w-100">
+					<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/logo.png" alt="Chase International" class="block w-100">
+					<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/logo-colored.png" alt="Chase International" class="block w-100 colored-logo absolute top-0 left-0">
+				</a>
+			</div><!-- end of logo -->
 
 			<nav class="navigation">
-				<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_id' => 'nav', 'theme_location' => 'primary-menu' ) ); ?>
-			</nav>
+				<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_id' => 'nav', 'theme_location' => 'primary-menu', 'menu_class' => 'flex justify-between items-center') ); ?>
+			</nav><!-- end of navigation -->
+
+			<div class="expanded-menu-bttn flex items-center">
+				<i>menu</i>
+				<div class="x-menu flex flex-col">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div><!-- end of expanded menu -->
+
+		</div><!-- end of header container -->
+	</header>
+
+	<header class="expanded-menu-wrapper fixed w-100 h-100">
+		<div class="expanded-menu-container h-100">
+			<div class="expanded-close absolute flex items-center">
+				<span>close</span>
+				<i class="ai-font-close-b"></i>
+			</div>
+			<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'menu_id' => 'expanded-menu', 'theme_location' => 'primary-menu') ); ?>
 		</div>
 	</header>
 

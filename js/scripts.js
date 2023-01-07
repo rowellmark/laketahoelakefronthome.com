@@ -9,7 +9,10 @@
 			burgerMenu();
 			onScrollFixed();
 			initNavigation();
+			properties();
 			initCounter();
+			testimonials();
+			map();
 			AOS.init({ disable: 'mobile' });
 		}
 
@@ -33,11 +36,29 @@
 			const $burgerBody = $('.expanded-menu-wrapper');
 			const $menuContainer = $('.expanded-menu-container');
 			const $burgerClose = $('.expanded-close');
+			const $menu = $('#expanded-menu');
+
+
+			let mouse_is_inside = false;
+
+			$menuContainer.hover(function () {
+				mouse_is_inside = true;
+				console.log('inside');
+			}, function () {
+				mouse_is_inside = false;
+				console.log('outside');
+			});
+
 
 			$(w).on("load", function () {
 				$menuContainer.mCustomScrollbar();
 			});
 
+
+			$menu.splitNav({
+				splitCount: 4
+			});
+			
 
 			$burgerButton.on('click', function () {
 
@@ -47,13 +68,17 @@
 
 			});
 
-			$('.expanded-contact-info').appendTo('#expanded-menu');
-
 
 			$burgerClose.on('click', function () {
 				$(b).removeClass('burger-nav-open');
 				$(this).removeClass('open');
 				$burgerBody.removeClass('open');
+			});
+
+			$burgerBody.on('click', function () {
+				if (mouse_is_inside == false) {
+					$burgerBody.removeClass('open');
+				}
 			});
 
 		}
@@ -86,24 +111,36 @@
 		function initNavigation() {
 			const $nav = $('#nav');
 			if ($nav.length > 0) $nav.navTabDoubleTap();
-
-
-
-			$nav.splitNav({
-				logo: '.logo',
-				splitCountEqual: true
-			});
-
 		}
+
+
+
 
 		function properties() {
 
-
-			let propertiesSlide = new Splide('.property-lists', {
-				arrows: false
+			let properties = new Splide('.prop-lists', {
+				arrows: false,
+				pagination: false
 			});
-			propertiesSlide.mount();
+			properties.mount();
+
+
+			$('.properties-pagination button').on('click', function (e) {
+				e.preventDefault();
+				var $this = $(this);
+				var type = $this.attr('data-arrow');
+
+				console.log(type);
+				// for prev
+				if (type == 'prev') {
+					properties.go('<');
+				}
+				if (type == 'next') {
+					properties.go('>');
+				}
+			});
 		}
+
 
 		function commaSeparateNumber(val) {
 			while (/(\d+)(\d{3})/.test(val.toString())) {
@@ -127,10 +164,10 @@
 				var shown = false;
 
 				$(w).scroll(function () {
-					var myelement = $(".hp-ratings-container");
+					var myelement = $(".hp-work-with-us-container");
 					if (isScrolledIntoView(myelement)) {
 						if (!shown) {
-							$(".rating-lists em").each(function () {
+							$(".hp-work-lists em").each(function () {
 								var $this = $(this);
 								const limit = parseInt($this.attr("data-number"));
 
@@ -150,6 +187,74 @@
 					}
 				});
 			}
+		}
+
+
+		function testimonials() {
+
+			let testimonials = new Splide('.testi-lists', {
+				arrows: false,
+				pagination: false
+			});
+			testimonials.mount();
+
+			$('.testi-custom-arrow button').on('click', function (e) {
+				e.preventDefault();
+				var $this = $(this);
+				var type = $this.attr('data-arrow');
+
+				console.log(type);
+				// for prev
+				if (type == 'prev') {
+					testimonials.go('<');
+				}
+				if (type == 'next') {
+					testimonials.go('>');
+				}
+			});
+		}
+
+		function mapresponsiveness() {
+			var map = jQuery(".aoe-map-main");
+			var mapOrigWidth = 660;
+			var mapOrigHeight = 817;
+			var container = jQuery(".aoe-map-outer");
+			var containerWidth = container.width();
+			var scale = containerWidth / mapOrigWidth;
+			scale = scale > 1 ? scale : scale;
+			map.css({
+				transform: 'scale(' + scale + ')',
+				transformOrigin: '0 0'
+			});
+			container.css({
+				height: (mapOrigHeight * scale)
+			});
+		}
+
+		function map() {
+
+			const $mapAreaTarget = $('area[data-map-target]');
+			const $mapMenuTarget = $('.aoe-comm-areas ul li');
+
+
+			$mapAreaTarget.hover(function () {
+				$('.aoe-map-hovers .' + $(this).data('map-target')).addClass('active');
+				$('.aoe-comm-areas ul li[data-map-target="' + $(this).data('map-target') + '"]').addClass('active');
+			}, function () {
+				$('.aoe-map-hovers .' + $(this).data('map-target')).removeClass('active');
+				$('.aoe-comm-areas ul li[data-map-target="' + $(this).data('map-target') + '"]').removeClass('active');
+			});
+
+			$mapMenuTarget.hover(function () {
+				$('.aoe-map-hovers .' + $(this).data('map-target')).addClass('active');
+			}, function () {
+				$('.aoe-map-hovers .' + $(this).data('map-target')).removeClass('active');
+			});
+
+
+			mapresponsiveness();
+			jQuery(window).resize(mapresponsiveness);
+
 		}
 
 		/**

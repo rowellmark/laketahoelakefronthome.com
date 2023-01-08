@@ -9,17 +9,7 @@
 	<section class="glob-contact-form relative">
 		<div class="glob-contact-form-wrap relative">
 			<div class="container">
-				<div class="default-title text-center" data-aos="fade-up" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
-					<h2 class="inline-block">
-						<span>contact us</span>
-						<em>send a message</em>
-					</h2>
-				</div>
-
-				<div class="glob-form" data-aos="fade-up" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
-					<?= do_shortcode('[contact-form-7 id="339" title="HP Contact Us" html_class="use-floating-validation-tip"]')?>
-				</div>
-
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer: Form") ) : ?><?php endif ?>
 			</div>
 		</div><!-- end of contact form wrap -->
 	</section>
@@ -29,30 +19,15 @@
 		<div class="footer-container container">
 
 			<div class="footer-logo">
-				<a href="<?= do_shortcode('[blogurl]')?>" class="block">
-					<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/logo-colored.png" alt="Chase International" class="block w-100 top-0 left-0">
-				</a>
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer: Logo") ) : ?><?php endif ?>
 			</div>
 
 			<div class="footer-info">
-				<ul class="flex justify-center item-center">
-					<li>
-						<i class="phone-icon"></i>
-						<?=  do_shortcode('[ai_client_phone]{default-phone}[/ai_client_phone]')?>
-					</li>
-					<li>
-						<i class="mobile-icon"></i>
-						<?=  do_shortcode('[ai_client_cell]{default-cell}[/ai_client_cell]')?>
-					</li>
-					<li>
-						<i class="email-icon"></i>
-						<?= do_shortcode('[ai_client_email]{default-email}[/ai_client_email]')?>
-					</li>
-				</ul>
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer: Contact informations") ) : ?><?php endif ?>
 			</div>
 
 			<div class="footer-disclaimer">
-				<p>Becky Arnold is committed to providing an accessible website. If you have difficulty accessing content, have difficulty viewing a file on the website, or notice any accessibility problems, please contact us at 530.581.0722 to specify the nature of the accessibility issue and any assistive technology you use. We strive to provide the content you need in the format you require.</p>
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Footer: Disclaimer") ) : ?><?php endif ?>
 			</div>
 
 

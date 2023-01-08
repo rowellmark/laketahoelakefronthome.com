@@ -22,10 +22,7 @@
 	<header class="header fixed w-100">
 		<div class="header-container expanded-container flex justify-between w-100 items-center">
 			<div class="logo">
-				<a href="<?= do_shortcode('[blogurl]')?>" class="site-name relative w-100">
-					<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/logo.png" alt="Chase International" class="block w-100">
-					<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/logo-colored.png" alt="Chase International" class="block w-100 colored-logo absolute top-0 left-0">
-				</a>
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Header: Logo") ) : ?><?php endif ?>
 			</div><!-- end of logo -->
 
 			<nav class="navigation">

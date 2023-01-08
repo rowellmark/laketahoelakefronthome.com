@@ -6,7 +6,7 @@
 			[aios_slider id="Homepage Slideshow"]
 		'); ?>
 	</div><!-- end of slideshow -->
-	<div class="social-media-banner absolute top-0 left-0 h-100 flex items-center">
+	<div class="social-media-banner absolute top-0 left-0 h-100 flex items-center" data-aos="fade-right" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 		<ul class="flex flex-col items-center">
 			<li>
 				<a href="#" target="_blank"><i class="ai-font-instagram"></i>Instagram</a>
@@ -25,7 +25,7 @@
 </section><!-- end of hero -->
 <section class="hp-quick-search relative">
 	<div class="container">
-		<div class="qc-title">
+		<div class="qc-title" data-aos="fade-up" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 			<div class="default-title">
 				<h2 class="inline-block">
 					<span>quick</span>
@@ -34,7 +34,7 @@
 			</div><!-- end of default title -->
 		</div><!-- end of qc title -->
 
-		<div class="qc-form w-100">
+		<div class="qc-form w-100" data-aos="fade-up" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 			<form action="#" method="get" class="flex">
 
 				<div class="qc-form-col">
@@ -78,7 +78,7 @@
 
 				<div class="qc-bttn relative">
 					<div class="qc-bttn-wrap relative">
-						<input type="submit">
+						<input type="submit" value="submit">
 						<i></i>
 					</div>
 					
@@ -94,13 +94,13 @@
 <section class="hp-cta">
 	<div class="container flex justify-between">
 
-		<div class="cta-list">
-			<a href="#" class="block w-100 relative">
+		<div class="cta-list" data-aos="fade-right" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
+			<a href="[blogurl]/find-my-dream-home/" class="block w-100 relative">
 				<span><i class="icon1"></i>Find my dream home</span>
 			</a>
 		</div>
-		<div class="cta-list">
-			<a href="#" class="block w-100 relative">
+		<div class="cta-list" data-aos="fade-left" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
+			<a href="[blogurl]/what-is-my-home-worth/" class="block w-100 relative">
 				<span><i class="icon2"></i>What’s my home worth?</span>
 			</a>
 		</div>
@@ -109,7 +109,7 @@
 </section><!-- end of cta -->
 <section class="hp-about">
 	<div class="hp-about-container flex expanded-container">
-		<div class="hp-about-content">
+		<div class="hp-about-content" data-aos="fade-up" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 			<div class="default-title">
 				<h2 class="inline-block">
 					<span>about</span>
@@ -122,7 +122,7 @@
 			</div>
 
 		</div><!-- end of about content -->
-		<div class="hp-about-image relative">
+		<div class="hp-about-image relative" data-aos="fade-left" data-aos-once="true"  data-aos-offset="200" data-aos-duration="900">
 			<a href="#" class="block aios-video-popup relative">
 				<canvas width="735" height="461" class="block w-100"></canvas>
 				<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/about-photo.jpg" alt="Becky Arnold" class="block w-100 h-100 absolute object-fit-cover object-position-center top-0 left-0">
@@ -133,7 +133,7 @@
 <section class="featured-listings">
 	<div class="featured-listings-container">
 
-		<div class="default-title text-center">
+		<div class="default-title text-center" data-aos="fade-up" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 			<h2 class="inline-block">
 				<span>featured</span>
 				<em>listings</em>
@@ -141,7 +141,7 @@
 		</div><!-- end of default title -->
 
 
-		<div class="prop-lists splide">
+		<div class="prop-lists splide" data-aos="fade-up" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 			<div class="splide__track">
 				<div class="splide__list">
 
@@ -349,12 +349,12 @@
 		</div><!-- end of properties -->
 
 
-		<div class="properties-pagination flex justify-center items-center">
-			<button data-arrow="prev"><i class="ai-font-arrow-g"></i></button>
+		<div class="properties-pagination flex justify-center items-center" data-aos="fade-up" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
+			<button data-arrow="prev" aria-label="Prev"><i class="ai-font-arrow-g"></i></button>
 			<div class="default-button">
 				<a href="#" class="block relative w-100"><span>view all listings +</span></a>
 			</div>
-			<button data-arrow="next"><i class="ai-font-arrow-g"></i></button>
+			<button data-arrow="next" aria-label="Next"><i class="ai-font-arrow-g"></i></button>
 		</div>
 
 	</div>
@@ -368,190 +368,157 @@
 		<div class="aoe-map-wrapper flex justify-between items-start">
 
 			<!-- Comm List -->
-			<div class="aoe-map-content">
-				<div class="default-title">
-					<h2 class="inline-block">
-						<span>search areas by</span>
-						<em>map</em>
-					</h2>
-				</div><!-- end of default title -->
-				<div class="aoe-comm-areas">
-					<ul>
-					
-						<li class="aoe-comm-title" data-map-target="carmel"><a href="#">Tahoe City</a></li>
-						<li class="aoe-comm-title" data-map-target="fishers"><a href="#">Carnelian Bay</a></li>
-						<li class="aoe-comm-title" data-map-target="zionsville"><a href="#">Homewood </a></li>
-						<li class="aoe-comm-title" data-map-target="noblesville"><a href="#">Tahoe Vista</a></li>
-						<li class="aoe-comm-title" data-map-target="plainfield"><a href="#">Tahoma</a></li>
-						<li class="aoe-comm-title" data-map-target="greenwood"><a href="#">Kings Beach  </a></li>
-						<li class="aoe-comm-title" data-map-target="brownsburg"><a href="#">Squaw Valley/Alpine Meadows</a></li>
-						<li class="aoe-comm-title" data-map-target="brownsburg"><a href="#">Truckee</a></li>
-					</ul>
-				</div>
+			<div class="aoe-map-content relative" data-aos="fade-right" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
+				<div class="aoe-map-wrap relative">
+					<div class="default-title">
+						<h2 class="inline-block">
+							<span>search areas by</span>
+							<em>map</em>
+						</h2>
+					</div><!-- end of default title -->
+					<div class="aoe-comm-areas">
+						<ul class="flex flex-wrap-wrap items-start">
+						
+							<li class="aoe-comm-title" data-map-target="tahoe-city"><a href="#">Tahoe City</a></li>
+							<li class="aoe-comm-title" data-map-target="carnelian-bay"><a href="#">Carnelian Bay</a></li>
+							<li class="aoe-comm-title" data-map-target="homewood"><a href="#">Homewood </a></li>
+							<li class="aoe-comm-title" data-map-target="noblesville"><a href="#">Tahoe Vista</a></li>
+							<li class="aoe-comm-title" data-map-target="tahoma"><a href="#">Tahoma</a></li>
+							<li class="aoe-comm-title" data-map-target="kings-beach"><a href="#">Kings Beach  </a></li>
+							<li class="aoe-comm-title" data-map-target="squaw-valley"><a href="#">Squaw Valley/<br>Alpine Meadows</a></li>
+							<li class="aoe-comm-title" data-map-target="truckee"><a href="#">Truckee</a></li>
+						</ul>
+					</div>
 
+					<div class="default-button">
+						<a href="#" class="block relative w-100"><span>learn more +</span></a>
+					</div>
+				</div>
+			
 			</div>
 
 
 			<!-- Desktop -->
-			<div class="aoe-map-outer">
+			<div class="aoe-map-outer" data-aos="fade-up" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 				<div class="aoe-map-main">
 					<img class="aoe-map-transparent" src="<?= do_shortcode('[stylesheet_directory]')?>/images/map/transparent.png" alt="Map Transparent" width="1600" height="1150" usemap="#map-area">
 					<map name="map-area" id="map-area">
 
-						<!-- Avon -->
-						<area data-map-target="avon" alt="Map"  href="#" coords="655,734,675,734,677,743,681,753,696,761,706,772,711,792,725,785,729,775,722,765,715,753,720,744,725,734,758,736,770,725,784,719,789,707,787,695,785,684,754,683,768,672,778,669,770,660,777,648,759,641,756,631,744,626,708,629,706,652,701,664,694,672,684,671,674,660,650,660,656,677,650,686,629,660,615,662,615,677,607,693,612,703,626,696,641,707,648,713,648,724,639,746,650,751" shape="poly">
+						<!-- Tahoe City -->
+						<area data-map-target="tahoe-city" alt="Tahoe City" href="#" coords="424,392,439,392,440,403,450,404,454,409,456,417,455,424,446,424,439,426,431,429,419,430,411,435,404,443,397,447,400,455,399,463,397,472,395,479,386,486,388,499,385,504,370,507,363,508,364,516,368,533,370,538,362,538,355,538,348,537,345,560,332,577,330,586,329,594,329,603,330,610,323,615,311,617,296,613,291,604,292,596,298,594,301,585,307,583,311,576,312,568,300,561,316,562,326,548,341,541,347,531,352,525,365,508,340,492,343,482,354,479,378,480,386,471,388,457,386,433,389,426,379,415,390,415,401,412,407,412,420,421,423,407,428,400" shape="poly">
+						<area data-map-target="tahoe-city" alt="Tahoe City" href="#" coords="370,359,378,357,379,350,384,348,379,341,387,341,392,353,400,355,396,370,385,374,377,374,391,365,397,357,385,358" shape="poly">
 
-						<!-- Carmel -->
-						<area data-map-target="carmel" alt="Map"  href="#" coords="924,224,1259,224,1250,233,1244,242,1247,254,1245,267,1237,274,1228,283,1220,295,1216,309,1204,314,1192,317,1194,338,1182,357,1178,369,928,372" shape="poly">
+						<!-- Homewood -->
+						<area data-map-target="homewood" alt="Homewood" href="#" coords="363,510,375,510,381,511,377,520,377,527,380,538,380,545,377,553,374,561,377,570,381,581,381,586,384,591,384,598,374,598,370,605,369,611,378,618,380,624,371,635,374,639,384,628,384,640,371,648,359,652,347,654,343,644,333,639,329,624,332,608,329,597,332,591,334,575,345,562,348,543,362,541,372,542" shape="poly">
 
-						<!-- Fishers -->
-						<area data-map-target="fishers" alt="Map"  href="#" coords="1249,238,1257,225,1278,218,1292,237,1311,237,1312,218,1324,226,1328,237,1364,235,1371,244,1386,249,1400,251,1414,240,1510,242,1515,251,1518,292,1491,295,1486,304,1477,307,1479,317,1470,335,1484,335,1491,352,1501,362,1517,362,1515,369,1184,369,1192,341,1202,336,1196,321,1209,316,1218,309,1223,290,1233,280,1247,263" shape="poly">
+						<!-- Tahoma -->
+						<area data-map-target="tahoma" alt="Tahoma" href="#" coords="383,590,389,591,394,595,407,601,421,606,433,613,435,626,435,636,427,644,420,651,412,658,406,665,400,676,391,681,385,681,389,669,387,641,390,627,374,637,383,624,380,615,372,613,374,600,387,601" shape="poly">
 
-						<!-- Zionsville -->
-						<area data-map-target="zionsville" alt="Map"  href="#" coords="802,295,802,254,818,259,826,257,837,242,845,260,876,262,883,272,899,272,923,254,924,284,911,290,904,298,912,309,921,314,921,327,911,343,897,343,881,351,875,365,869,351,859,346,844,336,849,310,833,286,821,271,814,300" shape="poly">
+						<area data-map-target="tahoma" alt="Tahoma" href="#" coords="442,721,450,726,452,732,451,739,450,745,443,738,439,729" shape="poly">
 
-						<!-- Noblesville -->
-						<area data-map-target="noblesville" alt="Map"  href="#" coords="1160,44,1179,38,1179,25,1193,14,1206,33,1223,18,1235,20,1246,20,1247,40,1251,62,1258,71,1294,76,1352,69,1354,90,1338,102,1313,116,1323,133,1328,143,1340,148,1361,141,1393,143,1393,167,1388,183,1417,208,1447,224,1512,217,1514,239,1416,243,1400,251,1371,236,1326,234,1328,224,1302,219,1292,237,1272,208,1265,155,1246,153,1225,157,1222,177,1215,200,1244,203,1246,215,1234,215,1229,222,1172,222,1165,203,1192,168,1214,148,1220,122,1211,96,1199,110,1197,136,1182,148,1175,168,1156,163,1161,131,1161,103,1178,72,1182,59" shape="poly">
+						<!-- Squaw Valley/ Alpine Meadows  -->
+						<area data-map-target="squaw-valley" alt="Squaw Valley/Alpine Meadows" href="#" coords="231,363,240,363,243,353,252,351,260,359,265,362,275,351,281,346,292,350,302,348,305,353,311,351,318,350,324,354,325,360,331,364,349,363,389,362,380,370,366,373,368,382,369,388,374,395,368,404,374,411,380,415,386,423,386,431,385,456,385,469,382,477,372,475,364,475,355,479,345,481,339,489,358,503,364,515,346,529,348,537,331,547,315,561,301,560,303,567,312,569,312,578,303,584,298,589,294,597,260,594,259,440,248,437,238,419,239,409,214,405,221,392,229,388,232,379" shape="poly">
 
-						<!-- Plainfield -->
-						<area data-map-target="plainfield" alt="Map"  href="#" coords="629,824,615,829,612,813,622,798,636,803,639,813,660,805,670,805,681,788,698,786,720,794,732,791,741,764,765,764,770,776,775,748,790,752,790,767,780,786,775,808,782,829,790,848,787,868,784,887,766,887,754,889,753,904,772,909,749,918,730,915,717,904,706,909,691,911,696,885,675,880,658,882,636,873,624,866" shape="poly">
+						<!-- Carnelian Bay -->
+						<area data-map-target="carnelian-bay" alt="Carnelian Bay" href="#" coords="480,311,469,312,461,322,464,326,454,329,443,332,446,337,438,351,443,361,445,367,428,359,414,362,419,367,421,376,421,383,427,388,444,389,443,399,455,404,461,392,466,387,466,367,472,364,480,362,486,356,489,347,489,337,472,320" shape="poly">
 
-						<!-- GREENWOOD -->
-						<area data-map-target="greenwood" alt="Map"  href="#" coords="1049,964,1209,961,1217,971,1224,980,1226,990,1238,993,1229,1007,1241,1017,1239,1029,1197,1031,1195,1045,1202,1066,1201,1083,1166,1083,1167,1096,1138,1098,1122,1084,1111,1095,1085,1092,1058,1056,1047,1033" shape="poly">
 
-						<!-- Brownsburg -->
-						<area data-map-target="brownsburg" alt="Map" href="#" coords="614,484,629,480,627,506,655,510,653,498,648,486,650,472,665,484,670,492,679,474,699,482,713,494,732,498,732,506,732,518,722,523,729,534,878,555,735,580,734,594,732,602,706,602,705,621,681,614,674,606,651,585,655,547,656,533,639,550,638,567,615,571,598,560,615,538,626,530,612,516" shape="poly">
+						<!-- Tahoe Vista -->
+						<area data-map-target="tahoe-vista" alt="Tahoe Vista" href="#" coords="483,299,493,299,499,293,510,289,524,294,537,297,532,304,529,315,526,332,529,345,501,343,492,346,487,329,474,322,479,312,483,304" shape="poly">
+
+						<!-- Kings Beach -->
+						<area data-map-target="kings-beach" alt="Kings Beach" href="#" coords="542,276,548,275,553,278,561,278,561,369,554,364,546,351,534,346,530,338,529,324,531,313,534,305,538,300,542,291" shape="poly">
+
+
+						<!-- TRUCKEE -->
+						<area data-map-target="truckee" alt="Truckee" href="#" coords="245,39,315,42,332,60,348,43,339,39,354,25,365,28,390,16,396,7,401,11,404,4,420,8,425,3,434,8,445,3,451,2,448,10,449,24,449,32,453,39,483,41,478,54,475,60,475,70,482,81,489,84,492,90,500,93,510,97,497,109,482,100,480,94,471,97,466,102,466,113,461,118,482,121,489,130,488,139,496,140,491,145,497,150,503,149,516,152,532,142,536,160,536,168,549,174,561,180,562,276,552,275,544,274,542,282,536,267,529,270,519,273,504,286,500,292,490,299,484,299,481,310,472,310,461,316,459,323,447,328,441,324,445,334,439,349,442,361,429,359,420,360,415,366,419,369,422,375,425,384,425,392,425,400,420,409,419,418,404,402,406,410,397,412,390,413,377,409,376,396,379,391,371,381,374,373,391,374,401,371,404,359,398,351,392,342,382,340,385,350,375,358,334,362,329,347,315,350,310,347,287,344,271,357,260,349,251,349,245,353,245,361,228,360,206,346,191,332,184,325,175,331,168,336,150,331,147,339,157,343,162,351,119,341,126,349,144,351,141,359,146,363,155,361,159,367,145,369,129,367,127,373,108,379,105,387,84,407,81,419,67,424,52,420,60,402,59,381,51,368,62,358,58,343,84,334,88,337,97,328,121,323,136,318,142,294,153,287,151,273,121,272,125,255,120,243,127,234,140,239,170,237,179,234,165,229,159,224,163,220,178,214,191,210,211,197,193,185,197,165,210,157,216,162,225,141,233,132,261,130,226,112,232,101,251,110,263,118,270,126,281,125,280,113,275,104,275,90,265,87,264,100,246,92,233,84,238,48" shape="poly">
+
+						<area data-map-target="truckee" alt="Truckee" href="#" coords="34,178,33,163,44,157,49,162,58,153,61,167,71,165,75,173,86,175,90,182,90,195,89,202,91,207,81,212,88,218,106,215,88,230,87,238,89,248,87,256,88,264,88,272,44,274,45,259,35,253,23,239,4,231,24,206,29,194,19,191,14,196,6,198,9,182,20,175,28,177" shape="poly">
+
 
 
 
 					</map>
-					<img class="aoe-map-base" src="<?= do_shortcode('[stylesheet_directory]')?>/images/map/map-with-label.png" alt="Map Base" width="660" height="817" usemap="#map-area">
+					<img class="aoe-map-base" src="<?= do_shortcode('[stylesheet_directory]')?>/images/map/map.png" alt="Map Base" width="660" height="817" usemap="#map-area">
 
 					<!-- Hovers -->
 					<div class="aoe-map-hovers">
 
-						<div class="avon">
+						<div class="tahoe-city">
 							<div class="aoe-map-pin">
-								<span><i class="aoe-icon-center"></i>Avon</span>
+								<span>Tahoe City</span>
 							</div>
 							<div class="aoe-map-img">
-								<span class="flex items-center"><i></i>Avon</span>
-								<img src="[stylesheet_directory]/images/map/avon.png" alt="Map">
-							</div>
-						</div><!-- end of map hover child -->
-
-						<div class="carmel">
-							<div class="aoe-map-pin">
-								<span><i class="aoe-icon-center"></i>carmel</span>
-							</div>
-							<div class="aoe-map-img">
-								<span><i class="aoe-icon-center"></i>carmel</span>
-								<img src="[stylesheet_directory]/images/map/carmel.png" alt="Map">
-							</div>
-						</div><!-- end of map hover child -->
-
-						<div class="fishers">
-							<div class="aoe-map-pin">
-								<span><i class="aoe-icon-center"></i>Fishers</span>
-							</div>
-							<div class="aoe-map-img">
-								<span><i class="aoe-icon-center"></i>Fishers</span>
-								<img src="[stylesheet_directory]/images/map/fisher.png" alt="Map">
-							</div>
-						</div><!-- end of map hover child -->
-
-						<div class="zionsville">
-							<div class="aoe-map-pin">
-								<span class="flex flex-col items-end"><i></i>ZIONSVILLE</span>
-							</div>
-							<div class="aoe-map-img">
-								<span class="flex items-center">ZIONSVILLE<i></i></span>
-								<img src="[stylesheet_directory]/images/map/zionsville.png" alt="Map">
-							</div>
-						</div><!-- end of map hover child -->
-
-						<div class="noblesville">
-							<div class="aoe-map-pin">
-								<span class="flex flex-col items-start"><i></i>Noblesville</span>
-							</div>
-							<div class="aoe-map-img">
-								<span><i class="aoe-icon-center"></i>Noblesville</span>
-								<img src="[stylesheet_directory]/images/map/noblesville.png" alt="Map">
-							</div>
-						</div><!-- end of map hover child -->
-
-						<div class="plainfield">
-							<div class="aoe-map-pin">
-								<span><i class="aoe-icon-center"></i>Plainfield</span>
-							</div>
-							<div class="aoe-map-img">
-								<span class="flex items-center"><i></i>Plainfield</span>
-								<img src="[stylesheet_directory]/images/map/plainfield.png" alt="Map">
-							</div>
-						</div><!-- end of map hover child -->
-
-						<div class="greenwood">
-							<div class="aoe-map-pin">
-								<span><i  class="aoe-icon-center"></i>GREENWOOD</span>
-							</div>
-							<div class="aoe-map-img">
-								<span><i class="aoe-icon-center"></i>GREENWOOD</span>
-								<img src="[stylesheet_directory]/images/map/greenwood.png" alt="Map">
-							</div>
-						</div><!-- end of map hover child -->
-
-						<div class="brownsburg">
-							<div class="aoe-map-pin">
-								<span><i></i>Brownsburg</span>
-							</div>
-							<div class="aoe-map-img">
-								<span class="flex items-center"><i></i>Brownsburg</span>
-								<img src="[stylesheet_directory]/images/map/brownsburg.png" alt="Map">
+								<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/map/tahoe-city.png" alt="Tahoe City">
 							</div>
 						</div><!-- end of map hover child -->
 
 
-						<div class="westfield">
-							<div class="aoe-map-alternate">
-								<i></i>
-								<em>Westfield</em>
+						<div class="homewood">
+							<div class="aoe-map-pin">
+								<span>Homewood</span>
 							</div>
-						</div>
-						<div class="whitestown">
-							<div class="aoe-map-alternate">
-								<i></i>
-								<em>Whitestown</em>
+							<div class="aoe-map-img">
+								<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/map/homewood.png" alt="Homewood">
 							</div>
-						</div>
-						<div class="pittsboro">
-							<div class="aoe-map-alternate">
-								<i></i>
-								<em>Pittsboro</em>
-							</div>
-						</div>
-						<div class="danville">
-							<div class="aoe-map-alternate">
-								<i></i>
-								<em>Danville</em>
-							</div>
-						</div>
-						<div class="mooresville">
-							<div class="aoe-map-alternate">
-								<i></i>
-								<em>Mooresville</em>
-							</div>
-						</div>
-
-						<div class="indianapolis">
-							<div class="aoe-map-alternate">
-								<i></i>
-
-							</div>
-						</div>
+						</div><!-- end of map hover child -->
 
 
+						<div class="tahoma">
+							<div class="aoe-map-pin">
+								<span>Tahoma</span>
+							</div>
+							<div class="aoe-map-img">
+								<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/map/tahoma.png" alt="Tahoma">
+							</div>
+						</div><!-- end of map hover child -->
+
+						
+						<div class="squaw-valley">
+							<div class="aoe-map-pin">
+								<span>Squaw Valley/<br>Alpine Meadows </span>
+							</div>
+							<div class="aoe-map-img">
+								<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/map/squaw-valley.png" alt="Squaw Valley/Alpine Meadows">
+							</div>
+						</div><!-- end of map hover child -->
+
+						<div class="carnelian-bay">
+							<div class="aoe-map-pin text-center">
+								<span>Carnelian Bay</span>
+							</div>
+							<div class="aoe-map-img">
+								<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/map/carnelian-bay.png" alt="Carnelian Bay">
+							</div>
+						</div><!-- end of map hover child -->
+
+						<div class="tahoe-vista">
+							<div class="aoe-map-pin text-center">
+								<span>Tahoe Vista</span>
+							</div>
+							<div class="aoe-map-img">
+								<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/map/tahoe-vista.png" alt="Carnelian Bay">
+							</div>
+						</div><!-- end of map hover child -->
+
+						<div class="kings-beach">
+							<div class="aoe-map-pin text-center">
+								<span>Kings Beach</span>
+							</div>
+							<div class="aoe-map-img">
+								<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/map/kings-beach.png" alt="Kings Beach">
+							</div>
+						</div><!-- end of map hover child -->
+
+						<div class="truckee">
+							<div class="aoe-map-pin text-center">
+								<span>Truckee</span>
+							</div>
+							<div class="aoe-map-img">
+								<img src="<?= do_shortcode('[stylesheet_directory]')?>/images/map/truckee.png" alt="Truckee">
+							</div>
+						</div><!-- end of map hover child -->
 					</div>
-
 				</div>
 			</div><!-- end of aoe outer -->
 
@@ -564,7 +531,7 @@
 <section class="hp-work-with-us relative">
 	<div class="hp-work-with-us-container w-100">
 
-		<div class="default-title text-center">
+		<div class="default-title text-center" data-aos="fade-up" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 			<h2 class="inline-block">
 				<span>why work</span>
 				<em>with us</em>
@@ -601,7 +568,7 @@
 <section class="hp-testimonials">
 	<div class="container flex">
 
-		<div class="testimonials-title">
+		<div class="testimonials-title" data-aos="fade-right" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 			<div class="default-title">
 				<h2 class="inline-block">
 					<span>what our</span>
@@ -611,7 +578,7 @@
 			</div>
 		</div><!-- end of testimonials title -->
 
-		<div class="hp-testi-container relative">
+		<div class="hp-testi-container relative" data-aos="fade-left" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 
 			<div class="testi-lists splide">
 				<div class="splide__track">
@@ -647,9 +614,9 @@
 			</div><!-- end of testi lists -->
 
 			<div class="testi-custom-arrow absolute flex items-center">
-				<button data-arrow="prev"><i class="ai-font-arrow-g"></i></button>
+				<button data-arrow="prev" aria-label="Prev"><i class="ai-font-arrow-g"></i></button>
 				<div class="paginate-divider"></div>
-				<button data-arrow="next"><i class="ai-font-arrow-g"></i></button>
+				<button data-arrow="next" aria-label="Next"><i class="ai-font-arrow-g"></i></button>
 			</div>
 
 		</div><!-- end of testi container -->
@@ -659,7 +626,7 @@
 <section class="section-9">
 	<div class="section-9-container flex w-100">
 
-		<div class="hp-in-the-media">
+		<div class="hp-in-the-media" data-aos="fade-right" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 			<div class="default-title">
 				<h2 class="inline-block">
 					<span>in the</span>
@@ -689,7 +656,7 @@
 
 		</div><!-- end of hp in the media -->
 
-		<div class="hp-find-us-on-social">
+		<div class="hp-find-us-on-social" data-aos="fade-left" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 			<div class="default-title">
 				<h2 class="inline-block">
 					<span>find us on</span>

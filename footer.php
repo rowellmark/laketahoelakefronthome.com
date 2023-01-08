@@ -9,14 +9,14 @@
 	<section class="glob-contact-form relative">
 		<div class="glob-contact-form-wrap relative">
 			<div class="container">
-				<div class="default-title text-center">
+				<div class="default-title text-center" data-aos="fade-up" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 					<h2 class="inline-block">
 						<span>contact us</span>
 						<em>send a message</em>
 					</h2>
 				</div>
 
-				<div class="glob-form">
+				<div class="glob-form" data-aos="fade-up" data-aos-once="true"  data-aos-offset="200" data-aos-duration="800">
 					<?= do_shortcode('[contact-form-7 id="339" title="HP Contact Us" html_class="use-floating-validation-tip"]')?>
 				</div>
 

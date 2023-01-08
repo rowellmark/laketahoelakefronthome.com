@@ -1354,8 +1354,97 @@ body{
     .aoe-map-content{
         width: 42.70%;
         margin-top: 36px;
-        background: var(--primary);
     }
+        
+        .aoe-map-content::before {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: var(--primary);
+            opacity: 0.8;
+            z-index: 3;
+        }
+        .aoe-map-content::after{
+            display: block;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url(images/map/compass-bg.png) no-repeat bottom right transparent;
+            z-index: 5;
+        }
+        .aoe-map-content .aoe-map-wrap{
+            z-index: 10;
+            padding: 64px;
+        }
+
+
+            .aoe-map-content .default-title h2 span,
+            .aoe-map-content .default-title h2 em{
+                color: #fff;
+            }
+
+            .aoe-map-content .aoe-map-wrap ul{
+                padding: 62px 0;
+            }
+                .aoe-map-content .aoe-map-wrap ul li{
+                    width: calc(100% / 2);
+                    position: relative;
+                    margin: 5px 0;
+                }
+                    .aoe-map-content .aoe-map-wrap ul li::after{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        background: var(--primary);
+                        max-width: 88px;
+                        z-index: 2;
+                    }
+                    .aoe-map-content .aoe-map-wrap ul li::before{
+                        display: block;
+                        width: 0;
+                        height: 100%;
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        background: url(images/map/cta-hover.png) no-repeat 0 0 transparent;
+                        background-size: 100% 100%;
+                        z-index: 3;
+                        transition: var(--transition);
+                    }
+                        .aoe-map-content .aoe-map-wrap ul li:hover::before,
+                        .aoe-map-content .aoe-map-wrap ul li.active::before{
+                            width: 100%;
+                        }
+                    .aoe-map-content .aoe-map-wrap ul li a{
+                        display: block;
+                        color: #fff;
+                        font-weight: 500;
+                        letter-spacing: 0.05em;
+                        font-size: 20px;
+                        position: relative;
+                        z-index: 5;
+                        padding: 17px 0 17px 30px;
+                    }
+
+            .aoe-map-content .aoe-map-wrap .default-button{
+                
+            }
+                .aoe-map-content .aoe-map-wrap .default-button a{
+                    color: #fff;
+                    border-color: #fff;
+                }
     /* Content */
 
     /* MAP */
@@ -1381,6 +1470,171 @@ body{
         width: 100%;
         height: 100%;
     }
+
+        .aoe-map-hovers > div{
+            position: absolute;
+            transition: var(--transition);
+        }
+            /* Text */
+            .aoe-map-hovers .aoe-map-pin {
+                position: absolute;
+                z-index: 5;
+            }
+
+            .aoe-map-hovers .aoe-map-pin span {
+                color: #000;
+                font-size: 13px;
+                font-family: var(--font-family-title);
+                text-transform: uppercase;
+                letter-spacing: 0.02em;
+                font-weight: 600;
+                transition: var(--transition);
+                text-shadow: 1px 1px 0 transparent,
+                        -1px 1px 0 transparent,
+                        1px -1px 0 transparent,
+                        -1px -1px 0 transparent,
+                        0px 1px 0 transparent,
+                        0px -1px 0 transparent,
+                        -1px 0px 0 transparent,
+                        1px 0px 0 transparent,
+                        2px 2px 0 transparent,
+                        -2px 2px 0 transparent,
+                        2px -2px 0 transparent,
+                        -2px -2px 0 transparent,
+                        0px 2px 0 transparent,
+                        0px -2px 0 transparent,
+                        -2px 0px 0 transparent,
+                        2px 0px 0 transparent,
+                        1px 2px 0 transparent,
+                        -1px 2px 0 transparent,
+                        1px -2px 0 transparent,
+                        -1px -2px 0 transparent,
+                        2px 1px 0 transparent,
+                        -2px 1px 0 transparent,
+                        2px -1px 0 transparent,
+                        -2px -1px 0 transparent;
+
+                }
+                .aoe-map-hovers .active .aoe-map-pin span{
+                    color: #fff;
+                    text-shadow: 1px 1px 0 var(--primary),
+                            -1px 1px 0 var(--primary),
+                            1px -1px 0 var(--primary),
+                            -1px -1px 0 var(--primary),
+                            0px 1px 0 var(--primary),
+                            0px -1px 0 var(--primary),
+                            -1px 0px 0 var(--primary),
+                            1px 0px 0 var(--primary),
+                            2px 2px 0 var(--primary),
+                            -2px 2px 0 var(--primary),
+                            2px -2px 0 var(--primary),
+                            -2px -2px 0 var(--primary),
+                            0px 2px 0 var(--primary),
+                            0px -2px 0 var(--primary),
+                            -2px 0px 0 var(--primary),
+                            2px 0px 0 var(--primary),
+                            1px 2px 0 var(--primary),
+                            -1px 2px 0 var(--primary),
+                            1px -2px 0 var(--primary),
+                            -1px -2px 0 var(--primary),
+                            2px 1px 0 var(--primary),
+                            -2px 1px 0 var(--primary),
+                            2px -1px 0 var(--primary),
+                            -2px -1px 0 var(--primary);
+                }
+
+            /* Image */
+
+            .aoe-map-hovers > div img{
+                transition: var(--transition);
+                opacity: 0;
+            }
+                .aoe-map-hovers > div.active img{
+                    opacity: 1;
+                }
+
+            /* Hovers */
+
+                /* Tahoe City */
+                .aoe-map-hovers .tahoe-city{
+                    top: 341px;
+                    left: 291px;
+                }
+                    .aoe-map-hovers .tahoe-city .aoe-map-pin{
+                        top: 143px;
+                        left: 70px;
+                    }
+                /* Tahoe City */
+                /* Homewood */
+                .aoe-map-hovers .homewood{
+                    top: 508px;
+                    left: 329px;
+                }
+                    .aoe-map-hovers .homewood .aoe-map-pin {
+                        top: 57px;
+                        left: 19px;
+                    }
+                /* Homewood */
+                /* Tahoma */
+                .aoe-map-hovers .tahoma{
+                    top: 587px;
+                    left: 371px;
+                }
+                    .aoe-map-hovers .tahoma .aoe-map-pin {
+                        top: 36px;
+                        left: 22px;
+                    }
+                /* Tahoma */
+                /* Squaw Valley/Alpine Meadows */
+                .aoe-map-hovers .squaw-valley {
+                    top: 346px;
+                    left: 215px;
+                }
+                    .aoe-map-hovers .squaw-valley .aoe-map-pin {
+                        top: 81px;
+                        left: 21px;
+                    }
+                /* Squaw Valley/Alpine Meadows */
+                /* Carnelian Bay */
+                .aoe-map-hovers .carnelian-bay {
+                    top: 310px;
+                    left: 415px;
+                }
+                    .aoe-map-hovers .carnelian-bay .aoe-map-pin {
+                        top: 55px;
+                        left: 19px;
+                    }
+                /* Carnelian Bay */
+                /* Tahoe Vista  */
+                .aoe-map-hovers .tahoe-vista {
+                    top: 289px;
+                    left: 474px;
+                }
+                    .aoe-map-hovers .tahoe-vista .aoe-map-pin {
+                        top: 13px;
+                        left: 2px;
+                    }
+                /* Tahoe Vista  */
+                /* Kings Beach */
+                .aoe-map-hovers .kings-beach {
+                    top: 273px;
+                    left: 528px;
+                }
+                    .aoe-map-hovers .kings-beach .aoe-map-pin {
+                        top: 35px;
+                        left: 10px;
+                    }
+                /* Kings Beach */
+                /* TRUCKEE */
+                .aoe-map-hovers .truckee {
+                    top: 0;
+                    left: 0;
+                }
+                    .aoe-map-hovers .truckee .aoe-map-pin {
+                        top: 214px;
+                        left: 320px;
+                    }                                                                            
+                /* TRUCKEE */
 /* MAP */
 /* Why Work With us */
 .hp-work-with-us{
@@ -1459,7 +1713,7 @@ body{
                 padding-bottom: 20px;
             }
             .hp-testimonials .testi-list i{
-                color: var(--primary)
+                color: var(--primary);
                 font-style: normal;
                 font-size: 93px;
                 display: block;

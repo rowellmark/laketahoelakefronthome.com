@@ -8,11 +8,198 @@
 /* iPad(landscape) | iPad(landscape) | Galaxy Tab 4 (landscape) | Galaxy Tab 3 (landscape) */ 
 @media only screen and (max-width: 1199px) {
 
+	.default-title h2 em {
+		font-size: 55px;
+	}
+	.expanded-menu-container{
+		width: 80%;
+	}
+	.header #nav li{
+		padding: 0 2px;
+	}
+	.header #nav li a{
+		font-size: 12px;
+		padding: 10px 5px;
+	}
+
+	.featured-listings .prop-lists .prop-list-set .prop-list-left .prop-list .prop-content h2 {
+		font-size: 16px;
+	}
+		.featured-listings .prop-lists .prop-list-set .prop-list-left .prop-list .prop-content h2 span {
+			font-size: 12px;
+		}
+	.featured-listings .prop-list .prop-content h2{
+		font-size: 14px;
+	}
+		.featured-listings .prop-list .prop-content h2 span{
+			font-size: 12px;
+		}
+
+	.featured-listings .prop-list a:hover .prop-content .default-button {
+		max-width: 150px;
+		min-width: 150px;
+	}
+		.featured-listings .prop-list .prop-content .default-button em {
+			font-size: 10px;
+			height: 45px;
+		}
+
+	.aoe-map-content .aoe-map-wrap{
+		padding: 35px;
+	}
+
+
+		.aoe-map-content .aoe-map-wrap ul {
+			padding: 35px 0;
+		}
+		.aoe-map-content .aoe-map-wrap ul li a{
+			font-size: 14px;
+		}
+
+	.hp-in-the-media .hp-blog-post h4{
+		font-size: 14px;
+	}
+		.hp-in-the-media .hp-blog-post p{
+			font-size: 12px;
+		}
 } 
 
 /* iPad(portrait) | Galaxy Tab 4(portrait)  */ 
 @media only screen and (max-width: 991px) {
-	
+	nav#pojo-a11y-toolbar {
+		display: none;
+	}
+	.header{
+		position: absolute;
+		z-index: 10;
+	}
+	.header .navigation,
+	.header .expanded-menu-bttn{
+		display: none;
+	}
+
+		.header .logo {
+			width: 100%;
+			margin: 0 auto;
+			padding: 30px 0;
+		}
+
+	.hero .social-media-banner{
+		display: none;
+	}
+
+	.hp-quick-search .qc-form{
+
+	}
+		.hp-quick-search .qc-form form{
+			flex-flow: column;
+		}
+			.hp-quick-search .qc-form .qc-form-col:first-child,
+			.hp-quick-search .qc-form .qc-form-col:nth-child(2),
+			.hp-quick-search .qc-form .qc-form-col,
+			.hp-quick-search .qc-form .qc-bttn{
+				width: 100%;
+			}
+	.hp-cta .container{
+		flex-flow: column;
+	}	
+		.hp-cta .cta-list{
+			width: 100%;
+			margin: 10px 0;
+		}
+
+	.hp-about .hp-about-container{
+		flex-flow: column;
+	}
+		.hp-about .hp-about-content{
+			width: 100%;
+		}
+		.hp-about .hp-about-image{
+			width: 100%;
+			margin: 40px 0 0;
+		}
+
+	.featured-listings .prop-lists .prop-list-set{
+		flex-flow: column;
+	}
+		.featured-listings .prop-lists .prop-list-set .prop-list-left{
+			width: 100%;
+		}
+
+		.featured-listings .prop-lists .prop-list-set .prop-list-right{
+			width: 100%;
+			flex-flow: column;
+		}
+			.featured-listings .prop-lists .prop-list-set .prop-list-right .prop-list{
+				width: 100%;
+			}
+
+		.featured-listings .prop-list .prop-content{
+			flex-flow: column;
+		}
+
+			.featured-listings .prop-list .prop-content h2,
+			.featured-listings .prop-lists .prop-list-set .prop-list-left .prop-list .prop-content h2{
+				font-size: 20px;
+			}
+
+			.featured-listings .prop-lists .prop-list-set .prop-list-left .prop-list .prop-content h2 span,
+			.featured-listings .prop-list .prop-content h2 span{
+				font-size: 16px;
+			}
+
+	.aoe-map-wrapper{
+		flex-flow: column;
+	}
+		.aoe-map-outer{
+			display: none;
+		}
+
+		.aoe-map-content{
+			width: 100%;
+		}
+
+			.aoe-map-content .aoe-map-wrap ul{
+				flex-flow: column;
+			}
+				.aoe-map-content .aoe-map-wrap ul li{
+					width: 100%;
+				}
+					.aoe-map-content .aoe-map-wrap ul li a{
+						font-size: 20px;
+					}
+
+	.hp-work-with-us{
+		background: transparent;
+	}
+	.hp-testimonials{
+
+	}
+		.hp-testimonials .container{
+			flex-flow: column;
+		}
+			.hp-testimonials .testimonials-title{
+				width: 100%;
+			}
+			.hp-testimonials .hp-testi-container{
+				margin: 40px 0 0;
+				width: 100%;
+			}
+
+	.section-9-container{
+		flex-flow: column;
+	}
+		.hp-in-the-media{
+			width: 100%;
+		}
+
+			.hp-in-the-media .default-title{
+				padding-left: 0;
+			}
+		.hp-find-us-on-social{
+			margin: 30px 0 0;
+			width: 100%;
+		}
 	/* The following are used on inner pages. Please edit carefully. */
 
 	.inner {
@@ -28,14 +215,49 @@
 	#content-sidebar #content{
 		width: 100%;
 	}
+
+
+	.footer .footer-info ul,
+	.footer .footer-nav ul{
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+	}
+		.footer .footer-info ul li,
+		.footer .footer-nav ul li{
+			padding: 5px 0;
+		}
+
 	
 } 
 
 /* Galaxy Tab 3(portrait) | Galaxy S5(landscape) */ 
 @media only screen and (max-width: 767px) {
+
+	.default-title h2 em {
+		font-size: 40px;
+	}
     .ip-banner .container{
         width: 100%;
     }
+
+	.hp-cta .cta-list a span{
+		font-size: 11px;
+	}
+
+	.featured-listings {
+		padding: 106px 0 0;
+	}
+	.featured-listings .properties-pagination .default-button {
+		margin: 0 16px;
+	}
+		.featured-listings .properties-pagination .default-button a {
+			padding: 28px 30px;
+		}
+
+	.hp-in-the-media .hp-blog-post .blog-post-content {
+		padding: 20px 0;
+	}
 }
 
 /* Galaxy S5(portrait) | iPod Touch(landscape) | iPod Touch(portrait) */ 

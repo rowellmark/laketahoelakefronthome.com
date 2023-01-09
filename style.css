@@ -950,6 +950,7 @@ body{
                 border: none;
                 outline: none;
                 cursor: pointer;
+                background: transparent;
             }
 
         .hp-quick-search .qc-form .qc-bttn{
@@ -1067,8 +1068,8 @@ body{
 /* About */
 .hp-about{
     background: url(images/about-bg.jpg) no-repeat left top transparent;
-    background-size: cover;
-    padding: 120px 0 143px;
+    background-size: auto 100%;
+    padding: 110px 0;
 }
     .hp-about .hp-about-container{
         
@@ -1452,7 +1453,10 @@ body{
         width: 46.28%;
         margin-left: 9.74%;
     }
-    
+    .aoe-map-main{
+        width: 660px;
+        position: relative;
+    }
     .aoe-map-transparent {
         position: absolute;
         top: 0;
@@ -1635,6 +1639,12 @@ body{
                         left: 320px;
                     }                                                                            
                 /* TRUCKEE */
+
+                .aoe-map-hovers .lake-tahoe {
+                    top: 535px;
+                    left: 483px;
+                    white-space: nowrap;
+                }
 /* MAP */
 /* Why Work With us */
 .hp-work-with-us{
